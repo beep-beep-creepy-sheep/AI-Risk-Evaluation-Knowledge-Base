@@ -4,6 +4,12 @@ A bilingual VitePress documentation website for learning safe AI use, prompt eng
 
 English is the default language at `/`. Simplified Chinese is available at `/zh/`.
 
+## Live Website
+
+View the deployed handbook here:
+
+[https://ai-risk-eval-kb.vercel.app](https://ai-risk-eval-kb.vercel.app)
+
 ## Safety Boundaries
 
 - Use mock data and public-style examples only.
