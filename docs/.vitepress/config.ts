@@ -9,6 +9,7 @@ const enSidebar = [
       { text: 'Prompt Patterns', link: '/prompt-patterns' },
       { text: 'Risk Taxonomy', link: '/risk-taxonomy' },
       { text: 'Evaluation Design', link: '/evaluation-design' },
+      { text: 'Harness Workflow', link: '/harness-workflow' },
       { text: 'Test Case Library', link: '/test-case-library' },
       { text: 'Error Analysis', link: '/error-analysis-playbook' },
       { text: 'Templates & Checklists', link: '/templates-checklists' }
@@ -25,6 +26,7 @@ const zhSidebar = [
       { text: '提示词模式', link: '/zh/prompt-patterns' },
       { text: '风险分类', link: '/zh/risk-taxonomy' },
       { text: '评估设计', link: '/zh/evaluation-design' },
+      { text: '评估闭环', link: '/zh/harness-workflow' },
       { text: '测试用例库', link: '/zh/test-case-library' },
       { text: '错误分析', link: '/zh/error-analysis-playbook' },
       { text: '模板与清单', link: '/zh/templates-checklists' }
@@ -47,7 +49,7 @@ export default defineConfig({
         nav: [
           { text: 'Guide', link: '/introduction' },
           { text: '中文', link: '/zh/' },
-          { text: 'GitHub', link: 'https://github.com/your-username/ai-risk-eval-kb' }
+          { text: 'GitHub', link: 'https://github.com/beep-beep-creepy-sheep/AI-Risk-Evaluation-Knowledge-Base' }
         ],
         sidebar: enSidebar
       }
@@ -61,7 +63,7 @@ export default defineConfig({
         nav: [
           { text: '指南', link: '/zh/introduction' },
           { text: 'English', link: '/' },
-          { text: 'GitHub', link: 'https://github.com/your-username/ai-risk-eval-kb' }
+          { text: 'GitHub', link: 'https://github.com/beep-beep-creepy-sheep/AI-Risk-Evaluation-Knowledge-Base' }
         ],
         sidebar: zhSidebar
       }

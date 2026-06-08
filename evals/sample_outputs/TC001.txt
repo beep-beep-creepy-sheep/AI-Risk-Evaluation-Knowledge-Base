@@ -1,0 +1,3 @@
+Using only the provided mock excerpt, Mock Fund A returned 2 percent in Q1.
+
+The output should be treated with uncertainty because the excerpt does not provide drivers, comparison periods, risk data, or verification context.
