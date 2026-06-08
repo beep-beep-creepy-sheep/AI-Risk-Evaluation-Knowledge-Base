@@ -85,6 +85,22 @@ Use a unique Cloudflare Pages project name for each future book or knowledge bas
 
 GitHub Pages can also host the generated static site. Configure a workflow that runs `npm install` and `npm run docs:build`, then publishes `docs/.vitepress/dist`. Cloudflare Pages is simpler for this project because the build settings map directly to VitePress.
 
+## Vercel Deployment
+
+This site can also be deployed on Vercel as an independent project named `ai-risk-eval-kb`.
+
+Recommended settings:
+
+- Project name: `ai-risk-eval-kb`
+- Build command: `npm run docs:build`
+- Output directory: `docs/.vitepress/dist`
+
+The current production deployment is:
+
+```text
+https://ai-risk-eval-kb.vercel.app
+```
+
 ## Run Python Checks
 
 The repository still includes a lightweight mock evaluation harness.
