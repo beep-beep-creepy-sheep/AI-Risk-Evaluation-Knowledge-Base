@@ -1,6 +1,6 @@
 # AI Risk & Evaluation Knowledge Base
 
-A bilingual VitePress documentation website for learning safe AI use, prompt engineering, AI risk testing, and evaluation harness design in analyst workflows.
+A bilingual, textbook-style VitePress documentation website for learning safe AI use, prompt engineering, AI risk testing, and evaluation harness design in analyst workflows.
 
 English is the default language at `/`. Simplified Chinese is available at `/zh/`.
 

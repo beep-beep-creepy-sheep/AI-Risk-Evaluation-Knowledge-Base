@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: AI Risk & Evaluation Knowledge Base
-  text: A practical handbook for safer analyst AI workflows
-  tagline: Prompt engineering, risk taxonomy, evaluation design, and review templates for mock-data portfolio analytics examples.
+  text: A textbook-style handbook for safer analyst AI workflows
+  tagline: Learn prompt engineering, AI risk taxonomy, evaluation design, and review habits from first principles using mock-data examples.
   actions:
     - theme: brand
       text: Start the Handbook
@@ -26,9 +26,10 @@ features:
 
 ## What This Site Is
 
-This knowledge base is a professional learning resource for analysts exploring AI-assisted drafting, summarisation, prompt engineering, and quality assurance. It uses public-style examples and mock data only.
+This knowledge base is a professional learning resource for beginners and analysts exploring AI-assisted drafting, summarisation, prompt engineering, and quality assurance. It uses public-style examples and mock data only.
+
+The chapters are designed like a practical textbook: each section introduces concepts, explains why they matter, gives examples, and includes exercises or review questions.
 
 ## What This Site Is Not
 
 It is not investment advice, a production compliance system, a repository of private information, or a guide to bypassing safety controls. Every workflow should be treated as educational unless reviewed and approved through appropriate human processes.
-

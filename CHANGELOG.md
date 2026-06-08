@@ -6,6 +6,7 @@
 - Added English root pages and Simplified Chinese pages under `/zh/`.
 - Added local search, book-like sidebars, language navigation, and Cloudflare Pages deployment instructions.
 - Added Vercel deployment configuration and deployed the site as `ai-risk-eval-kb`.
+- Expanded chapters into a beginner-friendly textbook style with learning objectives, examples, review questions, and exercises.
 - Preserved the mock evaluation harness and sensitive-data checker alongside the docs site.
 
 ## 0.1.0 - 2026-06-08
