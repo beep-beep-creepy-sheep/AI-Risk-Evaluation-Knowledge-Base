@@ -19,7 +19,15 @@ PATTERNS: dict[str, re.Pattern[str]] = {
 }
 
 TEXT_EXTENSIONS = {".md", ".txt", ".yaml", ".yml", ".py", ".csv"}
-IGNORED_DIRS = {".git", ".venv", "__pycache__", ".pytest_cache"}
+IGNORED_DIRS = {
+    ".git",
+    ".venv",
+    "__pycache__",
+    ".pytest_cache",
+    "node_modules",
+    "dist",
+    "cache",
+}
 IGNORED_FILES = {
     Path("evals/test_cases.yaml"),
     Path("evals/rubrics.yaml"),
