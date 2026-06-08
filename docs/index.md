@@ -20,6 +20,8 @@ features:
     details: Use practical templates for public research summaries, mock metric explanations, formula checks, and uncertainty statements.
   - title: Evaluation Harness Thinking
     details: Build positive, adversarial, and regression tests around realistic analyst tasks using mock examples only.
+  - title: Portfolio Analytics Context
+    details: Connect AI risk controls to reporting, metrics, source reliability, advice boundaries, and record-keeping habits.
   - title: Audit-Ready Habits
     details: Track prompt versions, failures, assumptions, reviewer notes, and improvement loops.
 ---

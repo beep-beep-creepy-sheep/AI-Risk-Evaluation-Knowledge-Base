@@ -30,6 +30,7 @@ docs/
   risk-taxonomy.md
   evaluation-design.md
   harness-workflow.md              End-to-end mock eval harness workflow
+  portfolio-analytics-context.md   Portfolio analytics safe-use framing
   test-case-library.md
   error-analysis-playbook.md
   templates-checklists.md
@@ -96,6 +97,8 @@ GitHub Pages can also host the generated static site. Configure a workflow that 
 
 This site can also be deployed on Vercel as an independent project named `ai-risk-eval-kb`.
 
+Current status: the site is deployed manually with the Vercel CLI. It is not yet automatically redeployed from GitHub because the Vercel project is not connected to the GitHub repository.
+
 Recommended settings:
 
 - Project name: `ai-risk-eval-kb`
@@ -107,6 +110,21 @@ The current production deployment is:
 ```text
 https://ai-risk-eval-kb.vercel.app
 ```
+
+To manually publish local changes:
+
+```bash
+npm run docs:build
+npx vercel --prod --yes
+```
+
+To make updates automatic, connect the Vercel project `ai-risk-eval-kb` to:
+
+```text
+https://github.com/beep-beep-creepy-sheep/AI-Risk-Evaluation-Knowledge-Base
+```
+
+In Vercel, add a GitHub login connection or install the Vercel GitHub integration, then link this repository to the existing project. After that, pushes to `main` can trigger production deployments automatically.
 
 ## Run Python Checks
 

@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added an end-to-end harness workflow chapter in English and Simplified Chinese.
+- Added a portfolio analytics context chapter covering analyst prompt patterns, financial-services-specific risks, safe workplace framing, and activities to avoid.
 - Added sample mock outputs so the evaluation runner demonstrates scoring behavior, not only schema validation.
 - Added pytest coverage that requires sample outputs to pass their paired rubric checks.
 - Added GitHub Actions CI for docs build, pytest, eval validation, and sensitive-data scanning.

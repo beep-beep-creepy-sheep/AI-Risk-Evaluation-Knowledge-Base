@@ -10,6 +10,7 @@ const enSidebar = [
       { text: 'Risk Taxonomy', link: '/risk-taxonomy' },
       { text: 'Evaluation Design', link: '/evaluation-design' },
       { text: 'Harness Workflow', link: '/harness-workflow' },
+      { text: 'Portfolio Analytics Context', link: '/portfolio-analytics-context' },
       { text: 'Test Case Library', link: '/test-case-library' },
       { text: 'Error Analysis', link: '/error-analysis-playbook' },
       { text: 'Templates & Checklists', link: '/templates-checklists' }
@@ -27,6 +28,7 @@ const zhSidebar = [
       { text: '风险分类', link: '/zh/risk-taxonomy' },
       { text: '评估设计', link: '/zh/evaluation-design' },
       { text: '评估闭环', link: '/zh/harness-workflow' },
+      { text: '组合分析场景', link: '/zh/portfolio-analytics-context' },
       { text: '测试用例库', link: '/zh/test-case-library' },
       { text: '错误分析', link: '/zh/error-analysis-playbook' },
       { text: '模板与清单', link: '/zh/templates-checklists' }
