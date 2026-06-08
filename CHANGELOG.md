@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Added an end-to-end harness workflow chapter in English and Simplified Chinese.
+- Added sample mock outputs so the evaluation runner demonstrates scoring behavior, not only schema validation.
+- Added pytest coverage that requires sample outputs to pass their paired rubric checks.
+- Added GitHub Actions CI for docs build, pytest, eval validation, and sensitive-data scanning.
+- Updated README guidance for pull request checks and sample output scoring.
+
 ## 0.2.0 - 2026-06-08
 
 - Converted the knowledge base into a bilingual VitePress documentation website.

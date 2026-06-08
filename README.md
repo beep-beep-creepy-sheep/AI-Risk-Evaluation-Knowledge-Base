@@ -29,13 +29,14 @@ docs/
   prompt-patterns.md
   risk-taxonomy.md
   evaluation-design.md
+  harness-workflow.md              End-to-end mock eval harness workflow
   test-case-library.md
   error-analysis-playbook.md
   templates-checklists.md
   zh/                              Simplified Chinese pages
   .vitepress/config.ts             VitePress configuration
 
-evals/                             Mock evaluation fixtures
+evals/                             Mock evaluation fixtures and sample outputs
 scripts/                           Python eval and sensitive-data utilities
 tests/                             Pytest coverage for the utilities
 ```
@@ -118,13 +119,28 @@ python scripts/run_evals.py
 python scripts/check_sensitive_data.py .
 ```
 
+`python scripts/run_evals.py` validates the YAML test case schema and scores any matching files under `evals/sample_outputs/`. For example, `evals/sample_outputs/TC001.txt` is scored against the test case with ID `TC001`.
+
+## Pull Request Checks
+
+Pull requests should pass the same checks that the GitHub Actions workflow runs:
+
+```bash
+npm run docs:build
+pytest
+python scripts/run_evals.py
+python scripts/check_sensitive_data.py .
+```
+
+Create a branch for each change, push it, and open a pull request for review before merging into `main`.
+
 ## Add or Improve Content
 
 1. Update the English chapter first.
 2. Add a natural Simplified Chinese counterpart under `docs/zh/`.
 3. Keep links aligned across languages.
 4. Use only mock or public-style examples.
-5. Run `npm run docs:build`, `pytest`, and the sensitive-data checker.
+5. Run `npm run docs:build`, `pytest`, `python scripts/run_evals.py`, and the sensitive-data checker.
 6. Record meaningful changes in `CHANGELOG.md`.
 
 ## Limitations

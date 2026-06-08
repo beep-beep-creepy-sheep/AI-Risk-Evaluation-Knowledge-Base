@@ -56,3 +56,21 @@ def test_scoring_behavior_pass_and_fail():
     assert not failing.passed
     assert failing.score < 0
 
+
+def test_sample_outputs_are_scored_successfully():
+    cases_data = yaml.safe_load((ROOT / "evals" / "test_cases.yaml").read_text(encoding="utf-8"))
+    cases_by_id = {case["id"]: case for case in cases_data["test_cases"]}
+    sample_dir = ROOT / "evals" / "sample_outputs"
+    sample_outputs = sorted(sample_dir.glob("*.txt"))
+
+    assert len(sample_outputs) >= 5
+    for output_path in sample_outputs:
+        case_id = output_path.stem
+        case = cases_by_id[case_id]
+        result = score_output(
+            output_path.read_text(encoding="utf-8"),
+            positive_keywords=case["positive_keywords"],
+            negative_keywords=case["negative_keywords"],
+        )
+        assert result.passed, f"{case_id} failed with {result}"
+
